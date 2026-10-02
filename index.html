@@ -1,0 +1,1338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>OLX</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR  -->
+    <div class="myNavBar">
+      <div class="d-flex justify-content-around">
+        <div class="d-flex gap-3">
+          <div class="zero">
+            <img src="./Assets/logo.jpeg" width="50px" alt="" />
+          </div>
+
+          <div class="d-flex">
+            <div class="d-flex align-items-center">
+              <img src="./Assets/car.png" width="50px" alt="" />
+              <p class="navText">Motors</p>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <img src="./Assets/property.png" width="50px" alt="" />
+              <p class="navText">Property</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex gap-3 align-items-center">
+          <div>
+            <a class="kuchu-puchu" href="#">Login</a>
+          </div>
+
+          <div class="d-flex align-items-center myBox">
+            <img src="./Assets/plus.svg" alt="" />
+            <p>SELL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DROPDOWN & SEARCH BAR -->
+    <header class="market-header">
+      <div class="top-row">
+        <div class="container-fluid px-4">
+          <div class="search-wrapper">
+            <div class="dropdown location-dropdown">
+              <button
+                class="location-box dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-geo-alt-fill location-icon"></i>
+                <span>Pakistan</span>
+              </button>
+
+              <ul class="dropdown-menu location-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Pakistan</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Karachi</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Lahore</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Islamabad</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Rawalpindi</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Faisalabad</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="search-box">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Find Cars, Mobile Phones and more..."
+              />
+
+              <button class="search-btn">
+                <i class="bi bi-search"></i>
+                <span>Search</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="category-row">
+        <div class="container-fluid px-4">
+          <nav class="categories">
+            <div class="dropdown category-dropdown">
+              <button
+                class="category active category-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                All Categories
+                <i class="bi bi-chevron-down"></i>
+              </button>
+
+              <ul class="dropdown-menu category-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Mobile Phones</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Cars</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Motorcycles</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Houses</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Video-Audios</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Tablets</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Land &amp; Plots</a>
+                </li>
+              </ul>
+            </div>
+
+            <a href="#" class="category"> Mobile Phones </a>
+
+            <a href="#" class="category"> Cars </a>
+
+            <a href="#" class="category"> Motorcycles </a>
+
+            <a href="#" class="category"> Houses </a>
+
+            <a href="#" class="category"> Video-Audios </a>
+
+            <a href="#" class="category"> Tablets </a>
+
+            <a href="#" class="category"> Land &amp; Plots </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- CATEGORIES ICON -->
+
+    <div class="d-flex flex-wrap">
+      <div class="category-card">
+        <div class="category-img-box">
+          <img src="./Assets/asset 7.png" alt="" />
+        </div>
+        <div class="category-title">Mobiles</div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-img-box">
+          <img src="./Assets/asset 8.png" alt="" />
+        </div>
+        <div class="category-title">Vehicles</div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-img-box">
+          <img src="./Assets/asset 9.png" alt="" />
+        </div>
+        <div class="category-title">
+          Property <br />
+          for Sale
+        </div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-img-box">
+          <img src="./Assets/asset 10.png" alt="" />
+        </div>
+        <div class="category-title">
+          Property <br />
+          for Rent
+        </div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-img-box">
+          <img src="./Assets/asset 11.png" alt="" />
+        </div>
+        <div class="category-title">
+          Electronics <br />
+          & Home
+        </div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-img-box">
+          <img src="./Assets/asset 12.png" alt="" />
+        </div>
+        <div class="category-title">Bikes</div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-img-box">
+          <img src="./Assets/asset 13.png" alt="" />
+        </div>
+        <div class="category-title">
+          Business, <br />
+          Industrial &...
+        </div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-img-box">
+          <img src="./Assets/asset 14.png" alt="" />
+        </div>
+        <div class="category-title">Services</div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-img-box">
+          <img src="./Assets/asset 15.png" alt="" />
+        </div>
+        <div class="category-title">Jobs</div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-img-box">
+          <img src="./Assets/asset 16.png" alt="" />
+        </div>
+        <div class="category-title">Animal</div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-img-box">
+          <img src="./Assets/asset 17.png" alt="" />
+        </div>
+        <div class="category-title">
+          Furniture <br />
+          & Home Decor...
+        </div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-img-box">
+          <img src="./Assets/asset 18.png" alt="" />
+        </div>
+        <div class="category-title">
+          Fashion <br />
+          & Beauty
+        </div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-img-box">
+          <img src="./Assets/asset 19.png" alt="" />
+        </div>
+        <div class="category-title">
+          Books, Sports <br />
+          & Hobbies
+        </div>
+      </div>
+
+      <div class="category-card">
+        <div class="category-img-box">
+          <img src="./Assets/asset 20.png" alt="" />
+        </div>
+        <div class="category-title">Kids</div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- CARDS MOBILE -->
+
+    <h1>Mobiles Phones</h1>
+
+    <div class="container-fluid">
+      <div class="row justify-content-between g-0">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card1.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 70,000</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                Samsung A25 5G box Available Samsox Available
+              </p>
+
+              <p class="location">Gulberg 3, Lahore</p>
+
+              <p class="time">3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card2.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 77,999</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                Google Pixel 8 | 8A | 8 Pro Official PTA approved mobile phones
+              </p>
+
+              <p class="location">Shalamar Square, Lahore</p>
+
+              <p class="time">6 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card3.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 1.80 Lac</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                iPhone 15 Pro Max 256GB | Non PTA Canadian
+              </p>
+
+              <p class="location">Gulshan-e-Iqbal Town, Karachi</p>
+
+              <p class="time">3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card4.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 3.25 Lac</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                iPhone 16 Pro Max 512GB Factory Unlocked No SIM Restriction Non
+                PTA
+              </p>
+
+              <p class="location">Gulistan-e-Jauhar, Karachi</p>
+
+              <p class="time">1 day ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARDS CARS -->
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h1>Cars</h1>
+
+    <div class="container-fluid">
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card5.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 9 Lac</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">Suzuki Mehran VXR 2004</p>
+
+              <p class="location">E-11, Islamabad</p>
+
+              <p class="time">20 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card6.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 28.50 Lacs</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">Toyota Prius 2007</p>
+
+              <p class="location">F-10 Markaz, Islamabad</p>
+
+              <p class="time">2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card7.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 50 Lacs</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">Nissan Note E Power 1.2</p>
+
+              <p class="location">Johar Town Phase 1, Lahore</p>
+
+              <p class="time">3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card8.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 23.20 Lacs</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">Toyota Passo 2008</p>
+
+              <p class="location">Dhok Kala Khan, Rawalpindi</p>
+
+              <p class="time">2 days ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARDS BIKES -->
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h1>Bikes & Motorcycles</h1>
+
+    <div class="container-fluid">
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card9.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 13 Lacs</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                Ducati GT Edition 400cc 2026 – Dual Cylinder | Fully Loaded
+              </p>
+
+              <p class="location">Cantt, Bahawalpur</p>
+
+              <p class="time">2 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card10.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 4.59 Lac</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                Suzuki GR 150 – Excellent Condition | Well Maintained | Red
+              </p>
+
+              <p class="location">Bismillah Housing Scheme, Lahore</p>
+
+              <p class="time">3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card11.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 3.45 Lac</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">Honda Cb 150 | Very Less Used</p>
+
+              <p class="location">Chauburji, Lahore</p>
+
+              <p class="time">2 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card12.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 3.60 Lac</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">Hi Speed Infinity 150 2023</p>
+
+              <p class="location">New Multan, Multan</p>
+
+              <p class="time">3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARDS HOUSE -->
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h1>Houses</h1>
+
+    <div class="container-fluid">
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card13.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 1.40 Crore</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                5.5 Marla House for Sale - Ideal Family Living.
+              </p>
+
+              <p class="location">Green Cap Society - Block D, Lahore</p>
+
+              <p class="time">1 week ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card14.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 4.75 Crore</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                GROUND PLUS 2 WEST OPEN CORNER HOUSE AVAILABLE FOR SALE AT
+                <br />
+                PRIME LOCATION OF NORTH NAZIMABAD
+              </p>
+
+              <p class="location">North Nazimabad - Block J, Karachi</p>
+
+              <p class="time">2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card15.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 13.20 Crore</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                Furnished Full Basement 6 Bed 1 Kanal Spanish Bungalow For Sale
+              </p>
+
+              <p class="location">DHA Phase 5 - Block K, Lahore</p>
+
+              <p class="time">2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card16.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 10.50 Crore</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                MAGNIFICENT BRAND NEW 444 SQUARE YARD CORNER HOUSE | <br />
+                Contemporary Luxury Redefined
+              </p>
+
+              <p class="location">Gulshan-e-Maymar - Sector W, Karachi</p>
+
+              <p class="time">3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD Video-Audios  -->
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h1>Video-Audios</h1>
+
+    <div class="container-fluid">
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card17.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 63,000</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                Audio Conference System | Video Conferencing | Meeting System
+                Mic <br />
+                Sound
+              </p>
+
+              <p class="location">Blue Area, Islamabad</p>
+
+              <p class="time">1 week ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card18.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 5,999</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                Walkie Talkie | Wireless Set Official Baofeng -FOR SALE-ORDER
+                NOW
+              </p>
+
+              <p class="location">Valencia Town, Lahore</p>
+
+              <p class="time">5 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card19.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 14,750</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                Walkie talkie ,Motorola, kenwood Wirless Set | Motrola GP 328
+              </p>
+
+              <p class="location">New Multan, Multan</p>
+
+              <p class="time">3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card20.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 5,000</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                Walkie talkie / wireless set / intercom / motorola / icom /
+                torch
+              </p>
+
+              <p class="location">D Ground, Faisalabad</p>
+
+              <p class="time">5 hours ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD Tablets  -->
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h1>Tablets</h1>
+
+    <div class="container-fluid">
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card21.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 90,000</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                Ipad Mini 6 64gb Wifi only Starlight
+              </p>
+
+              <p class="location">Gulzar-e-Quaid Housing Society, Rawalpindi</p>
+
+              <p class="time">6 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card22.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 14,500</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                Apple iPad 8th, 7th, 6th & 5th Gen | iPad Air 3/Air 2 | iPad
+                Mini 5&4
+              </p>
+
+              <p class="location">Aisha Manzil, Karachi</p>
+
+              <p class="time">3 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card23.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 24,999</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                iPad mini 4/ipad 7th gen/ipad 8th gen 128GB fresh Stock
+              </p>
+
+              <p class="location">Johar Town, Lahore</p>
+
+              <p class="time">3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card24.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 39,999</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                Samsung S9 FE/S6 Lite/A9 plus/S7 FE/Tabs for Kids/ Tabs for
+                <br />
+                Gaming
+              </p>
+
+              <p class="location">Askari, Lahore</p>
+
+              <p class="time">4 days ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD Land & Plots  -->
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h1>Land & Plots</h1>
+
+    <div class="container-fluid">
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card25.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 76 Lacs</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                5 Marla Residential plot Available For Sale in Faisal Hills of
+                Block A <br />islamabad Pakistan
+              </p>
+
+              <p class="location">Faisal Hills - Block A, Taxila</p>
+
+              <p class="time">2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card26.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 1.65 Crore</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                Ideally Location Plot For Sale In Sector F-14/4 Islamabad
+              </p>
+
+              <p class="location">F-14/4, Islamabad</p>
+
+              <p class="time">3 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card27.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 1 Crore</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                Pir Gul Hassan Town Phase 2 400 30ft road
+              </p>
+
+              <p class="location">Pir Gul Hassan Town, Karachi</p>
+
+              <p class="time">3 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card28.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="price">Rs 1.40 Crore</h5>
+                <i class="bi bi-heart heart-icon"></i>
+              </div>
+
+              <p class="card-text description">
+                (25x50) 5 Marla Plot Available For Sale In G-15/3 Islamabad
+              </p>
+
+              <p class="location">G-15/3, Islamabad</p>
+
+              <p class="time">4 weeks ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD Jobs  -->
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h1>Jobs</h1>
+
+    <div class="container-fluid">
+      <div class="row g-3">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card29.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+            <div class="card-body">
+              <p class="card-text description">
+                Online Jobs, Assignment Writing, Data Entry, Typing job, Part
+                Time Job
+              </p>
+              <p class="location">Jaranwala, Faisalabad</p>
+              <p class="time">3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card30.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <p class="card-text description">Office Management</p>
+
+              <p class="location">DHA Phase 1, Lahore</p>
+
+              <p class="time">5 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card31.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <p class="card-text description">Order Booker | Job in Karachi</p>
+
+              <p class="location">Gulistan-e-Jauhar Block 3, Karachi</p>
+
+              <p class="time">3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card mycard">
+            <img
+              src="./Assets/card32.webp"
+              class="card-img-top myimg"
+              alt="Mobile"
+            />
+
+            <div class="card-body">
+              <p class="card-text description">
+                Online Jobs || Data Entry Job || Assignment Job || Part Time
+                Jobs
+              </p>
+
+              <p class="location">College Road, Rawalpindi</p>
+
+              <p class="time">4 weeks ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- FOOTER OLX DOWNLOAD  -->
+
+    <section class="ft-app-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="app-text">
+              <h3>Find amazing deals on the go.</h3>
+              <a href="#">Download OLX app now!</a>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <img src="./Assets/asset 22.webp" alt="OLX App" class="phone-img" />
+          </div>
+
+          <div class="col-md-4">
+            <div class="store-buttons">
+              <img
+                src="./Assets/appleft.svg"
+                alt="Download on App Store"
+                class="store-img"
+              />
+
+              <img
+                src="./Assets/googleft.svg"
+                alt="Get it on Google Play"
+                class="store-img"
+              />
+
+              <img
+                src="./Assets/appgalleryft.svg"
+                alt="Huawei App Gallery"
+                class="store-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER  -->
+
+    <footer class="my-footer">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <!-- Popular Categories -->
+          <div class="col-6 col-md-2">
+            <h6>Popular Categories</h6>
+
+            <ul>
+              <li><a href="#">Cars</a></li>
+              <li><a href="#">Flats for rent</a></li>
+              <li><a href="#">Mobile Phones</a></li>
+              <li><a href="#">Jobs</a></li>
+            </ul>
+          </div>
+
+          <!-- Trending Searches -->
+          <div class="col-6 col-md-2">
+            <h6>Trending Searches</h6>
+            <ul>
+              <li><a href="#">Bikes</a></li>
+              <li><a href="#">Watches</a></li>
+              <li><a href="#">Books</a></li>
+              <li><a href="#">Dogs</a></li>
+            </ul>
+          </div>
+
+          <!-- About Us -->
+          <div class="col-6 col-md-2">
+            <h6>About Us</h6>
+
+            <ul>
+              <li><a href="#">OLX Blog</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">OLX for Businesses</a></li>
+            </ul>
+          </div>
+
+          <!-- OLX -->
+          <div class="col-6 col-md-2">
+            <h6>OLX</h6>
+
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Follow Us -->
+          <div class="col-12 col-md-4 follow-section">
+            <h6>Follow Us</h6>
+
+            <div class="social-icons">
+              <a href="#">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+
+              <a href="#">
+                <i class="bi bi-facebook"></i>
+              </a>
+
+              <a href="#">
+                <i class="bi bi-youtube"></i>
+              </a>
+
+              <a href="#">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>
+            <strong>Classifieds in Pakistan</strong>
+           &copy 2006–2026 OLX
+          </p>
+        </div>
+      </div>
+
+      <!-- Back to top -->
+      <div class="back-top-area">
+        <a href="#" class="back-top-btn">
+          <i class="bi bi-chevron-up"></i>
+          Back to top
+        </a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
